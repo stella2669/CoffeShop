@@ -97,31 +97,28 @@ footer {
 						아이디 저장
 					</label>
 				</div>
-
-				<div>
-					<input type="submit" class="btn btn-secondary" value="로그인"
-						width="150px">
-				</div>
-
-				<button class="btn btn-secondaary" type="button"
-					data-toggle="collapse" data-target="#collapseExample"
-					aria-expanded="false" aria-controls="collapseExample">로그인이
-					안되십니까?</button>
-
-				<div class="collapse" id="collapseExample">
-					<div class="card card-body">
-						<input type="button" class="btn btn-secondary" onclick="#"
-							value="아이디 찾기"> <input type="button"
-							class="btn btn-secondary" onclick="#" value="비밀번호 찾기">
-					</div>
-				</div>
-				<div>
-					<input type="button" class="btn btn-secondary"
-						onclick="location.href='/register'" value="비회원주문"> <input
-						type="button" class="btn btn-secondary"
-						onclick="location.href='/register'" value="회원가입">
-				</div>
+				<input type="submit" class="btn btn-secondary" value="로그인">
 			</form>
+
+			<button class="btn btn-secondaary" type="button"
+				data-toggle="collapse" data-target="#collapseExample"
+				aria-expanded="false" aria-controls="collapseExample">로그인이
+				안되십니까?</button>
+
+			<div class="collapse" id="collapseExample">
+				<div class="card card-body">
+					<input type="button" class="btn btn-secondary" onclick="#"
+						value="아이디 찾기"> <input type="button"
+						class="btn btn-secondary" onclick="#" value="비밀번호 찾기">
+				</div>
+			</div>
+			<div>
+				<input type="button" class="btn btn-secondary"
+					onclick="location.href='/register'" value="비회원주문"> <input
+					type="button" class="btn btn-secondary"
+					onclick="location.href='/register'" value="회원가입">
+			</div>
+
 
 		</div>
 	</div>
