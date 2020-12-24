@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,11 +51,12 @@ footer {
 
 input[type=password] {
 	font-family: arial;
-}
+}	
 
 input::placeholder {
-	font-family: hzStyleFont;
-}
+	font-family:hzStyleFont;
+	}
+
 </style>
 </head>
 <body style="background: lightgray">
@@ -87,7 +90,8 @@ input::placeholder {
 			<h2>로그인</h2>
 			<img alt="" src="">
 			<!-- 로고 이미지 -->
-			<form action="login.jsp" method="post" class="needs-validation" novalidate>
+			<form action="login_success.jsp" method="post"
+				class="needs-validation" novalidate>
 				<div class="form-group">
 					<input type="text" class="form-control" id="user_id"
 						placeholder="아이디" name="user_id" required>
@@ -100,7 +104,7 @@ input::placeholder {
 				</div>
 				<div class="form-group form-check">
 					<label class="form-check-label"> <input
-						class="form-check-input" type="checkbox" name="remember">
+						class="form-check-input" type="checkbox" name="remember" required>
 						아이디 저장
 					</label>
 				</div>
@@ -116,7 +120,7 @@ input::placeholder {
 				<div class="card card-body">
 					<input type="button" class="btn btn-secondary" onclick="location.href='login_find.jsp'"
 						value="아이디 찾기"> <input type="button"
-						class="btn btn-secondary" onclick="location.href='login_find.jsp'" value="비밀번호 찾기">
+						class="btn btn-secondary" onclick="#" value="비밀번호 찾기">
 				</div>
 			</div>
 			<div>
