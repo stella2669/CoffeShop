@@ -48,6 +48,15 @@ footer {
 .btn {
 	margin: 8px;
 }
+
+input[type=password] {
+	font-family: arial;
+}	
+
+input::placeholder {
+	font-family:hzStyleFont;
+	}
+
 </style>
 </head>
 <body style="background: lightgray">
@@ -81,14 +90,16 @@ footer {
 			<h2>로그인</h2>
 			<img alt="" src="">
 			<!-- 로고 이미지 -->
-			<form action="login_success.jsp" class="needs-validation" novalidate>
+			<form action="login_success.jsp" method="post"
+				class="needs-validation" novalidate>
 				<div class="form-group">
 					<input type="text" class="form-control" id="user_id"
 						placeholder="아이디" name="user_id" required>
 				</div>
 				<div class="form-group">
 					<input type="password" class="form-control" id="pwd"
-						placeholder="비밀번호" name="pswd" size="10" required>
+						placeholder="비밀번호" name="pwd" size="10" style="color: black;"
+						required>
 
 				</div>
 				<div class="form-group form-check">
